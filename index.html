@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS-only Marquee Menu Effect | Codrops</title>
+	<meta name="description" content="A menu with a css-only marquee hover effect" />
+	<meta name="keywords" content="marquee, css, animation, loop, infinite, hover, menu, navigation" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://use.typekit.net/zhq0vyf.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script>
+	document.documentElement.className = "js";
+	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+	supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+	<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+</head>
+
+<body class="demo-1">
+	<main>
+		<div class="frame">
+			<div class="frame__title-wrap">
+				<h1 class="frame__title">Westwing </h1>
+				<p class="frame__info">Laissez-vous inspirer et faites de votre maison le plus bel endroit du monde!<a href="https://dribbble.com/shots/9524661-Homepage-Menu-Interaction">Dribbble shot</a></p>
+			</div>
+			<div class="frame__links">
+				<a href="https://tympanus.net/codrops/?p=48796">Article</a>
+				<a href="https://github.com/codrops/CSSMarqueeMenu/">GitHub</a>
+			</div>
+		</div>
+		<nav class="menu">
+			<div class="menu__item">
+				<a class="menu__item-link">Vaisselle</a>
+				<img class="menu__item-img" src="img/assiette.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Vaisselle</span>
+						<span>Vaisselle</span>
+						<span>Vaisselle</span>
+						<span>Vaisselle</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Table à manger</a>
+				<img class="menu__item-img" src="img/manger.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Table à manger</span>
+						<span>Table à manger</span>
+						<span>Table à manger</span>
+						<span>Table à manger</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Table extérieure</a>
+				<img class="menu__item-img" src="img/citron.jpeg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Table extérieure</span>
+						<span>Table extérieure</span>
+						<span>Table extérieure</span>
+						<span>Table extérieure</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Salle de bain</a>
+				<img class="menu__item-img" src="img/salledb.jpeg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Salle de bain</span>
+						<span>Salle de bain</span>
+						<span>Salle de bain</span>
+						<span>Salle de bain</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Piscine</a>
+				<img class="menu__item-img" src="img/piscine.jpeg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Piscine</span>
+						<span>Piscine</span>
+						<span>Piscine</span>
+						<span>Piscine</span>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="frame">
+			<p>Images by <a href="https://www.instagram.com/byfoul/">Frankie Cordoba AKA Foulster</a></p>
+		</div>
+	</main>
+	<!--script src="https://tympanus.net/codrops/adpacks/cda.js"></script-->
+</body>
+
+</html>
